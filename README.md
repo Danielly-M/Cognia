@@ -1,4 +1,4 @@
-# Cognia 🧩
+# Cognia 
 
 **Jogo digital de pareamento para estimulação cognitiva de crianças autistas.**
 
@@ -14,16 +14,16 @@ Atividade extensionista — UNINTER · CST em Análise e Desenvolvimento de Sist
 
 ---
 
-## ✨ O jogo
+## O jogo
 
 Três categorias progressivas, cada uma com **uma variável por vez** (princípio
 fundamental para o público autista):
 
 | Categoria | O que a criança explora | Cartas |
 |---|---|---|
-| 🎨 Cores | cores puras com o nome escrito | 4 / 6 / 8 |
-| 🔷 Formas | formas geométricas desenhadas, sempre na mesma cor | 4 / 6 / 8 |
-| 🐾 Animais | animais (emojis) com o nome escrito | 4 / 6 / 8 |
+|  Cores | cores puras com o nome escrito | 4 / 6 / 8 |
+|  Formas | formas geométricas desenhadas, sempre na mesma cor | 4 / 6 / 8 |
+|  Animais | animais (emojis) com o nome escrito | 4 / 6 / 8 |
 
 - **3 níveis por categoria** (2, 3 e 4 pares), desbloqueados ao concluir o anterior;
 - **Estrelas (1–3)** por desempenho — **nunca zero**: terminar já é sucesso;
@@ -31,7 +31,7 @@ fundamental para o público autista):
   "tente de novo" (toque grave e suave — **não existe som de erro**), vitória;
 - Progresso e configurações **salvos no aparelho** (100% offline).
 
-## 🎯 Decisões de UX/acessibilidade (e o porquê de cada uma)
+##  Decisões de UX/acessibilidade (e o porquê de cada uma)
 
 Cada linha abaixo nasceu da literatura de design para TEA e é verificável no código:
 
@@ -64,7 +64,7 @@ Cada linha abaixo nasceu da literatura de design para TEA e é verificável no c
     incompatível ou áudio quebrado NUNCA derrubam o app (ver `storage.test.js`
     e `sounds.test.js`).
 
-## 🧱 Stack
+## Stack
 
 - **Expo SDK 57** + React Native 0.86 + React 19 (JavaScript)
 - **@react-navigation/native-stack** — navegação em pilha previsível
@@ -75,7 +75,7 @@ Cada linha abaixo nasceu da literatura de design para TEA e é verificável no c
 
 Sem Redux, sem backend, sem analytics: superfície mínima, confiança máxima.
 
-## 🚀 Como rodar
+## Como rodar
 
 ```bash
 npm install
@@ -86,7 +86,7 @@ npm test           # suíte completa (98 testes)
 
 Requer Node 20+. Opcional (regerar efeitos sonoros): `npm run sounds`.
 
-## 📦 Gerar o APK
+## Gerar o APK
 
 Com [EAS Build](https://docs.expo.dev/build/introduction/) (nuvem, sem Android Studio):
 
@@ -103,7 +103,7 @@ npx expo prebuild -p android
 cd android && ./gradlew assembleRelease   # app/build/outputs/apk/release/
 ```
 
-## ✅ Status da validação com a comunidade (etapa acadêmica)
+##  Status da validação com a comunidade (etapa acadêmica)
 
 Implementação e testes automatizados estão prontos. Faltam as etapas que
 exigem pessoas — mantenha como checklist do trabalho final:
@@ -114,7 +114,7 @@ exigem pessoas — mantenha como checklist do trabalho final:
 - [ ] Gravar vídeo demonstrativo (~5 min) e capturar telas
 - [ ] Publicar no GitHub (repositório já inicializado com git local) e subir o APK
 
-## 📂 Estrutura
+## Estrutura
 
 ```
 src/
@@ -132,6 +132,6 @@ tests/         # setup global do Jest
 A lógica de jogo é **100% pura e determinística** (PRNG semeado) — o que torna
 os testes unitários densos e rápidos (~2s).
 
-## 📄 Licença
+## Licença
 
 MIT — ver [LICENSE](LICENSE).
